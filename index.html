@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ktra so nguyen to
+      const isPrime = (number) => {
+        for (let i = 2; i < number; i++) {
+          if (number % i === 0) {
+            return false;
+          }
+        }
+        return true;
+      };
+
+      // chuyen f => m, m => f
+      const footToMet = (number) => {
+        return number * 0.305;
+      };
+      const metToFoot = (number) => {
+        return number * 3.279;
+      };
+
+      // 1
+      const printHelo = () => {
+        console.log("hello rekkei abcd");
+      };
+
+      // 2
+      function mathPow(number) {
+        return number * number;
+      }
+
+      // 3
+      function century(number) {
+        return number / 100 + 1;
+      }
+
+      // 4
+      var myString = "hello xin chào abcd";
+      function cutText() {
+        const stringArr = myString.split("");
+        const arrString = [];
+        for (let i = 0; i < 15; i++) {
+          arrString.push(stringArr[i]);
+        }
+        arrString.push("...");
+        const arrNew = arrString.join("");
+        console.log(arrNew);
+      }
+
+      // 5
+      function upCase(str) {
+        let strLower = str.toLowerCase();
+        return strLower.charAt(0).toUpperCase() + strLower.slice(1);
+      }
+
+      // 6
+      function maxNumber(arr) {
+        const arrSort = arr.sort();
+        return arrSort[arrSort.length - 1];
+      }
+
+      // 7
+    </script>
+  </body>
+</html>
